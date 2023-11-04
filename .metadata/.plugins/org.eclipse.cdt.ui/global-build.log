@@ -1,0 +1,63 @@
+20:12:45 **** Incremental Build of configuration Debug for project 003HSE_Measurement ****
+make -j8 all 
+arm-none-eabi-size   003HSE_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	003HSE_Measurement.elf
+Finished building: default.size.stdout
+ 
+20:13:36 **** Incremental Build of configuration Debug for project 003HSE_Measurement ****
+make -j8 all 
+arm-none-eabi-size   003HSE_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	003HSE_Measurement.elf
+Finished building: default.size.stdout
+ 
+16:53:54 **** Incremental Build of configuration Debug for project 002HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-size   002HSI_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    600	      8	   1568	   2176	    880	002HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+16:55:05 **** Incremental Build of configuration Debug for project 002HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-size   002HSI_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    600	      8	   1568	   2176	    880	002HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+16:57:13 **** Incremental Build of configuration Debug for project 002HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-size   002HSI_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    600	      8	   1568	   2176	    880	002HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+16:59:43 **** Incremental Build of configuration Debug for project 002HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "002HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\002HSI_Measurement\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 002HSI_Measurement.elf
+ 
+arm-none-eabi-size   002HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  002HSI_Measurement.elf  > "002HSI_Measurement.list"
+   text	   data	    bss	    dec	    hex	filename
+    600	      8	   1568	   2176	    880	002HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+Finished building: 002HSI_Measurement.list
+ 
+17:03:17 **** Incremental Build of configuration Debug for project 002HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "002HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\002HSI_Measurement\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 002HSI_Measurement.elf
+ 
+arm-none-eabi-size   002HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  002HSI_Measurement.elf  > "002HSI_Measurement.list"
+   text	   data	    bss	    dec	    hex	filename
+    612	      8	   1568	   2188	    88c	002HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+Finished building: 002HSI_Measurement.list
+ 
