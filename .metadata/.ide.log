@@ -320,3 +320,20 @@
 2023-11-04 19:23:17,339 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
 2023-11-04 19:23:17,902 [INFO] ApiDb:448 - Save user favorites file C:\Users\Administrator/.stm32cubeide/favorites.mcus.txt: 0 item(s)
 2023-11-04 19:23:17,903 [INFO] ApiDb:452 - User favorites MCUs=[]
+2023-11-04 21:22:49,809 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to false
+2023-11-04 21:22:49,846 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2023-11-04 21:22:49,846 [INFO] MultiScanPanel:204 - Proxy status is invalid
+2023-11-04 21:22:49,851 [INFO] FinderPluginLoader:95 - Searching for filters in installed packs
+2023-11-04 21:22:52,439 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2023-11-04 21:22:56,439 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2023-11-04 21:22:56,439 [INFO] MultiScanPanel:204 - Proxy status is invalid
+2023-11-04 21:22:56,611 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2023-11-04 21:22:56,627 [INFO] DbBoards:634 - Loading board mini-images...
+2023-11-04 21:23:00,107 [ERROR] DbBoards:651 - Image file not found for board STM32U5G9J-DK1: C:\Users\Administrator\.stmcufinder\plugins\mcufinder//mcu//boards_images/STM32U5G9J-DK1.jpg
+2023-11-04 21:23:00,107 [ERROR] DbBoards:651 - Image file not found for board STM32U5G9J-DK2: C:\Users\Administrator\.stmcufinder\plugins\mcufinder//mcu//boards_images/STM32U5G9J-DK2.jpg
+2023-11-04 21:23:00,149 [INFO] DbBoards:657 - Loaded 188 board mini-images
+2023-11-04 21:23:43,848 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2023-11-04 21:23:43,855 [INFO] ApiDb:448 - Save user favorites file C:\Users\Administrator/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-11-04 21:23:43,855 [INFO] ApiDb:452 - User favorites MCUs=[]
+2023-11-04 21:23:43,856 [INFO] ApiDb:448 - Save user favorites file C:\Users\Administrator/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2023-11-04 21:23:43,857 [INFO] ApiDb:452 - User favorites Boards=[NUCLEO-F070RB]

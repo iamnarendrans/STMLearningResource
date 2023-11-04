@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HelloWorld Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001PeriClockEnable,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003HSE_Measurement Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002HSI_Measurement,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:debuggingPractice
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HelloWorld Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001PeriClockEnable,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003HSE_Measurement Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002HSI_Measurement,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:volatileKeyword Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001PeriClockEnable/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001PeriClockEnable/activeLaunchTarget=null\:---
@@ -12,5 +12,6 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HelloWorld\ Debug/activeLaunchT
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HelloWorld/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HelloWorld/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:debuggingPractice/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:volatileKeyword\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:HelloWorld\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:HelloWorld\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

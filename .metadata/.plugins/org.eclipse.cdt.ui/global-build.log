@@ -61,3 +61,141 @@ Finished building: default.size.stdout
  
 Finished building: 002HSI_Measurement.list
  
+21:27:14 **** Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f070rbtx.d" -MT"Startup/startup_stm32f070rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f070rbtx.o" "../Startup/startup_stm32f070rbtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: volatileKeyword.elf
+ 
+arm-none-eabi-size   volatileKeyword.elf 
+arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
+   text	   data	    bss	    dec	    hex	filename
+    476	      8	   1568	   2052	    804	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+Finished building: volatileKeyword.list
+ 
+21:27:26 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-size   volatileKeyword.elf 
+   text	   data	    bss	    dec	    hex	filename
+    476	      8	   1568	   2052	    804	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+21:28:23 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-size   volatileKeyword.elf 
+   text	   data	    bss	    dec	    hex	filename
+    476	      8	   1568	   2052	    804	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+21:28:37 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-size   volatileKeyword.elf 
+   text	   data	    bss	    dec	    hex	filename
+    476	      8	   1568	   2052	    804	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+21:28:47 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-size   volatileKeyword.elf 
+   text	   data	    bss	    dec	    hex	filename
+    476	      8	   1568	   2052	    804	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+21:29:37 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-size   volatileKeyword.elf 
+   text	   data	    bss	    dec	    hex	filename
+    476	      8	   1568	   2052	    804	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+21:34:38 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: volatileKeyword.elf
+ 
+arm-none-eabi-size   volatileKeyword.elf 
+arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
+   text	   data	    bss	    dec	    hex	filename
+    448	      8	   1568	   2024	    7e8	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+Finished building: volatileKeyword.list
+ 
+21:36:41 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: volatileKeyword.elf
+ 
+arm-none-eabi-size   volatileKeyword.elf 
+arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
+   text	   data	    bss	    dec	    hex	filename
+    464	      8	   1568	   2040	    7f8	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+Finished building: volatileKeyword.list
+ 
+21:37:10 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-size   volatileKeyword.elf 
+   text	   data	    bss	    dec	    hex	filename
+    464	      8	   1568	   2040	    7f8	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+21:38:21 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: volatileKeyword.elf
+ 
+arm-none-eabi-size   volatileKeyword.elf 
+arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
+   text	   data	    bss	    dec	    hex	filename
+    448	      8	   1568	   2024	    7e8	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+Finished building: volatileKeyword.list
+ 
+21:38:42 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-size   volatileKeyword.elf 
+   text	   data	    bss	    dec	    hex	filename
+    448	      8	   1568	   2024	    7e8	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+21:39:15 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: volatileKeyword.elf
+ 
+arm-none-eabi-size   volatileKeyword.elf 
+arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
+   text	   data	    bss	    dec	    hex	filename
+    456	      8	   1568	   2032	    7f0	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+Finished building: volatileKeyword.list
+ 
+21:39:47 **** Incremental Build of configuration Debug for project volatileKeyword ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: volatileKeyword.elf
+ 
+arm-none-eabi-size   volatileKeyword.elf 
+arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
+   text	   data	    bss	    dec	    hex	filename
+    448	      8	   1568	   2024	    7e8	volatileKeyword.elf
+Finished building: default.size.stdout
+ 
+Finished building: volatileKeyword.list
+ 

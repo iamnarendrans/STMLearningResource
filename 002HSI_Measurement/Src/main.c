@@ -57,5 +57,4 @@ int main(void)
 	uint32_t *pGPIOAAltFunHigReg = (uint32_t*)(GPIOA_BASE_ADDR + 0x24);
 	*pGPIOAAltFunHigReg &= ~(0xF << 0);
 
-	for(;;);
 }
