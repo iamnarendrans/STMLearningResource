@@ -1,201 +1,64 @@
-20:12:45 **** Incremental Build of configuration Debug for project 003HSE_Measurement ****
+18:37:51 **** Incremental Build of configuration Debug for project stm32f070xx_drivers ****
 make -j8 all 
-arm-none-eabi-size   003HSE_Measurement.elf 
+arm-none-eabi-gcc "../drivers/Src/stm32f070xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -I"C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f070xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/Src/stm32f070xx_gpio_driver.d" -MT"drivers/Src/stm32f070xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f070xx_gpio_driver.o"
+arm-none-eabi-gcc -o "stm32f070xx_drivers.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\stm32f070xx_drivers\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f070xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f070xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f070xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f070xx_drivers.elf  > "stm32f070xx_drivers.list"
    text	   data	    bss	    dec	    hex	filename
-    676	      8	   1568	   2252	    8cc	003HSE_Measurement.elf
+   2168	      8	   1568	   3744	    ea0	stm32f070xx_drivers.elf
 Finished building: default.size.stdout
  
-20:13:36 **** Incremental Build of configuration Debug for project 003HSE_Measurement ****
+Finished building: stm32f070xx_drivers.list
+ 
+18:40:50 **** Incremental Build of configuration Debug for project stm32f070xx_drivers ****
 make -j8 all 
-arm-none-eabi-size   003HSE_Measurement.elf 
+arm-none-eabi-size   stm32f070xx_drivers.elf 
    text	   data	    bss	    dec	    hex	filename
-    676	      8	   1568	   2252	    8cc	003HSE_Measurement.elf
+   2168	      8	   1568	   3744	    ea0	stm32f070xx_drivers.elf
 Finished building: default.size.stdout
  
-16:53:54 **** Incremental Build of configuration Debug for project 002HSI_Measurement ****
+18:43:41 **** Incremental Build of configuration Debug for project stm32f070xx_drivers ****
 make -j8 all 
-arm-none-eabi-size   002HSI_Measurement.elf 
+arm-none-eabi-size   stm32f070xx_drivers.elf 
    text	   data	    bss	    dec	    hex	filename
-    600	      8	   1568	   2176	    880	002HSI_Measurement.elf
+   2168	      8	   1568	   3744	    ea0	stm32f070xx_drivers.elf
 Finished building: default.size.stdout
  
-16:55:05 **** Incremental Build of configuration Debug for project 002HSI_Measurement ****
+18:45:40 **** Incremental Build of configuration Debug for project stm32f070xx_drivers ****
 make -j8 all 
-arm-none-eabi-size   002HSI_Measurement.elf 
+arm-none-eabi-gcc "../drivers/Src/stm32f070xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -I"C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f070xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/Src/stm32f070xx_gpio_driver.d" -MT"drivers/Src/stm32f070xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f070xx_gpio_driver.o"
+arm-none-eabi-gcc "../Src/003button_interrupt.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -I"C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f070xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/003button_interrupt.d" -MT"Src/003button_interrupt.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/003button_interrupt.o"
+arm-none-eabi-gcc -o "stm32f070xx_drivers.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\stm32f070xx_drivers\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f070xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f070xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f070xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f070xx_drivers.elf  > "stm32f070xx_drivers.list"
    text	   data	    bss	    dec	    hex	filename
-    600	      8	   1568	   2176	    880	002HSI_Measurement.elf
+   2160	      8	   1568	   3736	    e98	stm32f070xx_drivers.elf
 Finished building: default.size.stdout
  
-16:57:13 **** Incremental Build of configuration Debug for project 002HSI_Measurement ****
+Finished building: stm32f070xx_drivers.list
+ 
+18:47:51 **** Incremental Build of configuration Debug for project stm32f070xx_drivers ****
 make -j8 all 
-arm-none-eabi-size   002HSI_Measurement.elf 
+arm-none-eabi-gcc "../drivers/Src/stm32f070xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -I"C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f070xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/Src/stm32f070xx_gpio_driver.d" -MT"drivers/Src/stm32f070xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f070xx_gpio_driver.o"
+arm-none-eabi-gcc -o "stm32f070xx_drivers.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\stm32f070xx_drivers\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f070xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f070xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f070xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f070xx_drivers.elf  > "stm32f070xx_drivers.list"
    text	   data	    bss	    dec	    hex	filename
-    600	      8	   1568	   2176	    880	002HSI_Measurement.elf
+   2160	      8	   1568	   3736	    e98	stm32f070xx_drivers.elf
 Finished building: default.size.stdout
  
-16:59:43 **** Incremental Build of configuration Debug for project 002HSI_Measurement ****
+Finished building: stm32f070xx_drivers.list
+ 
+18:48:15 **** Incremental Build of configuration Debug for project stm32f070xx_drivers ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "002HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\002HSI_Measurement\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 002HSI_Measurement.elf
- 
-arm-none-eabi-size   002HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  002HSI_Measurement.elf  > "002HSI_Measurement.list"
+arm-none-eabi-size   stm32f070xx_drivers.elf 
    text	   data	    bss	    dec	    hex	filename
-    600	      8	   1568	   2176	    880	002HSI_Measurement.elf
+   2160	      8	   1568	   3736	    e98	stm32f070xx_drivers.elf
 Finished building: default.size.stdout
- 
-Finished building: 002HSI_Measurement.list
- 
-17:03:17 **** Incremental Build of configuration Debug for project 002HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "002HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\002HSI_Measurement\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 002HSI_Measurement.elf
- 
-arm-none-eabi-size   002HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  002HSI_Measurement.elf  > "002HSI_Measurement.list"
-   text	   data	    bss	    dec	    hex	filename
-    612	      8	   1568	   2188	    88c	002HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-Finished building: 002HSI_Measurement.list
- 
-21:27:14 **** Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f070rbtx.d" -MT"Startup/startup_stm32f070rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f070rbtx.o" "../Startup/startup_stm32f070rbtx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: volatileKeyword.elf
- 
-arm-none-eabi-size   volatileKeyword.elf 
-arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
-   text	   data	    bss	    dec	    hex	filename
-    476	      8	   1568	   2052	    804	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-Finished building: volatileKeyword.list
- 
-21:27:26 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-size   volatileKeyword.elf 
-   text	   data	    bss	    dec	    hex	filename
-    476	      8	   1568	   2052	    804	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-21:28:23 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-size   volatileKeyword.elf 
-   text	   data	    bss	    dec	    hex	filename
-    476	      8	   1568	   2052	    804	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-21:28:37 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-size   volatileKeyword.elf 
-   text	   data	    bss	    dec	    hex	filename
-    476	      8	   1568	   2052	    804	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-21:28:47 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-size   volatileKeyword.elf 
-   text	   data	    bss	    dec	    hex	filename
-    476	      8	   1568	   2052	    804	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-21:29:37 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-size   volatileKeyword.elf 
-   text	   data	    bss	    dec	    hex	filename
-    476	      8	   1568	   2052	    804	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-21:34:38 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: volatileKeyword.elf
- 
-arm-none-eabi-size   volatileKeyword.elf 
-arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
-   text	   data	    bss	    dec	    hex	filename
-    448	      8	   1568	   2024	    7e8	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-Finished building: volatileKeyword.list
- 
-21:36:41 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: volatileKeyword.elf
- 
-arm-none-eabi-size   volatileKeyword.elf 
-arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
-   text	   data	    bss	    dec	    hex	filename
-    464	      8	   1568	   2040	    7f8	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-Finished building: volatileKeyword.list
- 
-21:37:10 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-size   volatileKeyword.elf 
-   text	   data	    bss	    dec	    hex	filename
-    464	      8	   1568	   2040	    7f8	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-21:38:21 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: volatileKeyword.elf
- 
-arm-none-eabi-size   volatileKeyword.elf 
-arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
-   text	   data	    bss	    dec	    hex	filename
-    448	      8	   1568	   2024	    7e8	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-Finished building: volatileKeyword.list
- 
-21:38:42 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-size   volatileKeyword.elf 
-   text	   data	    bss	    dec	    hex	filename
-    448	      8	   1568	   2024	    7e8	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-21:39:15 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: volatileKeyword.elf
- 
-arm-none-eabi-size   volatileKeyword.elf 
-arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
-   text	   data	    bss	    dec	    hex	filename
-    456	      8	   1568	   2032	    7f0	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-Finished building: volatileKeyword.list
- 
-21:39:47 **** Incremental Build of configuration Debug for project volatileKeyword ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "volatileKeyword.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\volatileKeyword\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="volatileKeyword.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: volatileKeyword.elf
- 
-arm-none-eabi-size   volatileKeyword.elf 
-arm-none-eabi-objdump -h -S  volatileKeyword.elf  > "volatileKeyword.list"
-   text	   data	    bss	    dec	    hex	filename
-    448	      8	   1568	   2024	    7e8	volatileKeyword.elf
-Finished building: default.size.stdout
- 
-Finished building: volatileKeyword.list
  

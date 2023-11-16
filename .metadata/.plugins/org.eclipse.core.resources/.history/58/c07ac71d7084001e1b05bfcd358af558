@@ -1,0 +1,15 @@
+/*
+ * 002led_button.c
+ *
+ *  Created on: Nov 16, 2023
+ *      Author: Narendran Srinivasan
+ */
+
+
+#include "stm32f070xx.h"
+
+void delay(uint8_t dTime)
+{
+	for (uint32_t i; i <= (dTime * 1000); i++);
+}
+
