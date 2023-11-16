@@ -21,9 +21,9 @@
 #define NVIC_ISPR			((__vo uint32_t*)0xE000E200)		/*!Interrupt Set-pending Register*/
 #define NVIC_ICPR			((__vo uint32_t*)0xE000E280)		/*!Interrupt Clear-pending Register*/
 
-#define NVIC_PR_BASEADDR	((__vo uint32_t*)0xE000E400)		/*!Interrupt Priority Registers 0*/
+#define NVIC_PR_BASEADDR		((__vo uint32_t*)0xE000E400)		/*!Interrupt Priority Registers 0*/
 
-#define NO_PR_BITS_IMPLEMENTED		4							/*! Number of priority bits implemented in STM, will differ for other MCUs*/
+#define NO_PR_BITS_IMPLEMENTED		4					/*! Number of priority bits implemented in STM, will differ for other MCUs*/
 
 
 /**********************************************END: PROCESSOR SPECIFIC DETAILS*************************************************************/
@@ -39,7 +39,7 @@
 #define FLASH_BASEADDR				0x08000000U 			/*! Base address of the flash memory*/
 #define SRAM_BASEADDR				0x20000000U 			/*! Base address of the SRAM memory*/
 #define ROM_BASEADDR				0x1FFFC800U 			/*! Base address of the System memory*/
-#define SRAM						SRAM_BASEADDR		 	/*! Base address of the SRAM memory*/
+#define SRAM					SRAM_BASEADDR		 	/*! Base address of the SRAM memory*/
 
 /*
  * AHBx and APBx Bus peripheral base address
@@ -48,7 +48,7 @@
 #define PERIPH_BASEADDR				0x40000000U 		 /*! Base address of the Peripheral*/
 #define	APBPERIPH_BASEADDR			PERIPH_BASEADDR		 /*! Base address of the APB bus*/
 #define	AHB1PERIPH_BASEADDR			0x40020000U 		 /*! Base address of the AHB1 bus*/
-#define	AHB2PERIPH_BASEADDR			0x48000000U			 /*! Base address of the AHB2 bus*/
+#define	AHB2PERIPH_BASEADDR			0x48000000U		 /*! Base address of the AHB2 bus*/
 
 /*
  * Base addresses of peripherals which are hanging on AHB1 bus
@@ -56,7 +56,7 @@
 
 #define DMA_BASEADDR				(AHB1PERIPH_BASEADDR + 0x0000) /*! Base address of the DMA controller*/
 #define RCC_BASEADDR				(AHB1PERIPH_BASEADDR + 0x1000) /*! Base address of the RCC peripheral*/
-#define FLASH_INTER_BASEADDR		(AHB1PERIPH_BASEADDR + 0x2000) /*! Base address of the Flash Interface*/
+#define FLASH_INTER_BASEADDR			(AHB1PERIPH_BASEADDR + 0x2000) /*! Base address of the Flash Interface*/
 #define CRC_BASEADDR				(AHB1PERIPH_BASEADDR + 0x3000) /*! Base address of the CRC*/
 
 /*
@@ -140,15 +140,15 @@ typedef struct{
 	__vo uint32_t MODER;		/*!< GPIO Port Mode Register> 				Address offset: 0x00*/
 	__vo uint32_t OTYPER;		/*!< GPIO Port Output Type > 				Address offset: 0x04*/
 	__vo uint32_t OSPEEDR;		/*!< GPIO Port Speed Register> 				Address offset: 0x08*/
-	__vo uint32_t PUPDR;		/*!< GPIO Port Pull-up/Pull-Down Register> 	Address offset: 0x0C*/
-	__vo uint32_t IDR;			/*!< GPIO Port Input Data Register> 		Address offset: 0x10*/
-	__vo uint32_t ODR;			/*!< GPIO Port Output Data Register> 		Address offset: 0x14*/
-	__vo uint32_t BSRR;			/*!< GPIO Port Bit-Set/Reset Register> 		Address offset: 0x18*/
-	__vo uint32_t LCKR;			/*!< GPIO Port Lock Config Register> 		Address offset: 0x1C*/
-	__vo uint32_t AFR[2];		/*!< AFR[0] is AFRL | AFR[1] is AFRH		Address offset: 0x20 - 0x24*/
-//	__vo uint32_t AFRL;			/*!< GPIO AF Low Register> 					Address offset: 0x20*/
-//	__vo uint32_t AFRH;			/*!< GPIO AF High Register> 				Address offset: 0x24*/
-	__vo uint32_t BRR;			/*!< GPIO Bit Reset Register> 				Address offset: 0x28*/
+	__vo uint32_t PUPDR;		/*!< GPIO Port Pull-up/Pull-Down Register> 		Address offset: 0x0C*/
+	__vo uint32_t IDR;		/*!< GPIO Port Input Data Register> 			Address offset: 0x10*/
+	__vo uint32_t ODR;		/*!< GPIO Port Output Data Register> 			Address offset: 0x14*/
+	__vo uint32_t BSRR;		/*!< GPIO Port Bit-Set/Reset Register> 			Address offset: 0x18*/
+	__vo uint32_t LCKR;		/*!< GPIO Port Lock Config Register> 			Address offset: 0x1C*/
+	__vo uint32_t AFR[2];		/*!< AFR[0] is AFRL | AFR[1] is AFRH			Address offset: 0x20 - 0x24*/
+//	__vo uint32_t AFRL;		/*!< GPIO AF Low Register> 				Address offset: 0x20*/
+//	__vo uint32_t AFRH;		/*!< GPIO AF High Register> 				Address offset: 0x24*/
+	__vo uint32_t BRR;		/*!< GPIO Bit Reset Register> 				Address offset: 0x28*/
 
 }GPIO_RegDef_t;
 
@@ -156,20 +156,20 @@ typedef struct{
  * Peripheral Register definition structure for RCC
  */
 typedef struct{
-	__vo uint32_t CR;			/*!< RCC Clock Control REG>					Address offset: 0x00*/
-	__vo uint32_t CFGR;			/*!< RCC Clock CONGIG REG>					Address offset: 0x04*/
-	__vo uint32_t CIR;			/*!< RCC Clock INTERRUPT REG>				Address offset: 0x08*/
+	__vo uint32_t CR;		/*!< RCC Clock Control REG>					Address offset: 0x00*/
+	__vo uint32_t CFGR;		/*!< RCC Clock CONGIG REG>					Address offset: 0x04*/
+	__vo uint32_t CIR;		/*!< RCC Clock INTERRUPT REG>					Address offset: 0x08*/
 	__vo uint32_t APB2RSTR;		/*!< RCC APB Reset REG2>					Address offset: 0x0C*/
 	__vo uint32_t APB1RSTR;		/*!< RCC APB Reset REG1>					Address offset: 0x10*/
 	__vo uint32_t AHBENR;		/*!< RCC AHB CLK EN REG>					Address offset: 0x14*/
 	__vo uint32_t APB2ENR;		/*!< RCC APB CLK EN REG2>					Address offset: 0x18*/
 	__vo uint32_t APB1ENR;		/*!< RCC APB CLK EN REG1>					Address offset: 0x1C*/
-	__vo uint32_t BDCR;			/*!< RTC Domain Control REG>				Address offset: 0x20*/
-	__vo uint32_t CSR;			/*!< Control/Status REG>					Address offset: 0x24*/
+	__vo uint32_t BDCR;		/*!< RTC Domain Control REG>					Address offset: 0x20*/
+	__vo uint32_t CSR;		/*!< Control/Status REG>					Address offset: 0x24*/
 	__vo uint32_t AHBRSTR;		/*!< RCC AHB Rest REG>						Address offset: 0x28*/
 	__vo uint32_t CFGR2;		/*!< RCC CLK CFG REG2>						Address offset: 0x2C*/
 	__vo uint32_t CFGR3;		/*!< RCC CLK CFG REG3>						Address offset: 0x30*/
-	__vo uint32_t CR2;			/*!< RCC CLK Control REG>					Address offset: 0x34*/
+	__vo uint32_t CR2;		/*!< RCC CLK Control REG>					Address offset: 0x34*/
 
 }RCC_RegDef_t;
 
@@ -180,10 +180,10 @@ typedef struct{
 typedef struct{
 	__vo uint32_t IMR;			/*!< EXTI Interrupt Mask Register>			Address offset: 0x00*/
 	__vo uint32_t EMR;			/*!< EXTI Event Mask Register>				Address offset: 0x04*/
-	__vo uint32_t RTSR;			/*!< EXTI Rising Trigger Selection Reg.,>	Address offset: 0x08*/
-	__vo uint32_t FTSR;			/*!< EXTI Falling Trigger Selection Reg.,>	Address offset: 0x0C*/
-	__vo uint32_t SWIER;		/*!< EXTI SW interrupt EVent Register>		Address offset: 0x10*/
-	__vo uint32_t PR;			/*!< EXTI Pending Register>			Address offset: 0x14*/
+	__vo uint32_t RTSR;			/*!< EXTI Rising Trigger Selection Reg.,>		Address offset: 0x08*/
+	__vo uint32_t FTSR;			/*!< EXTI Falling Trigger Selection Reg.,>		Address offset: 0x0C*/
+	__vo uint32_t SWIER;			/*!< EXTI SW interrupt EVent Register>			Address offset: 0x10*/
+	__vo uint32_t PR;			/*!< EXTI Pending Register>				Address offset: 0x14*/
 
 }EXTI_RegDef_t;
 
@@ -194,7 +194,7 @@ typedef struct{
 
 typedef struct{
 	__vo uint32_t CFGR1;		/*!<SYSCFG Configuration Register1>			Address offset: 0x00*/
-	__vo uint32_t EXTICR[4];	/*!<SYSCFG External IRQ CFG Register>		Address offset: 0x08-0x14*/
+	__vo uint32_t EXTICR[4];	/*!<SYSCFG External IRQ CFG Register>			Address offset: 0x08-0x14*/
 	__vo uint32_t CFGR2;		/*!<SYSCFG Configuration Register2>			Address offset: 0x00*/
 }SYSCFG_RegDef_t;
 
@@ -209,7 +209,7 @@ typedef struct{
 #define GPIOD				((GPIO_RegDef_t*)GPIOD_BASEADDR)		/*! Defining GPIOD peripheral as typecasting base address*/
 #define GPIOF				((GPIO_RegDef_t*)GPIOF_BASEADDR)		/*! Defining GPIOF peripheral as typecasting base address*/
 
-#define RCC					((RCC_RegDef_t*)RCC_BASEADDR)			/*! Defining RCC peripheral as typecasting base address*/
+#define RCC				((RCC_RegDef_t*)RCC_BASEADDR)			/*! Defining RCC peripheral as typecasting base address*/
 #define EXTI				((EXTI_RegDef_t*)EXTI_BASEADDR)			/*! Defining EXTI peripheral as typecasting base address*/
 #define SYSGFG				((SYSCFG_RegDef_t*)SYSCFG_BASEADDR)		/*! Defining SYSCFG peripheral as typecasting base address*/
 
@@ -380,10 +380,10 @@ typedef struct{
  * This macro returns a code (between 0 to 4) for a given GPIO base Address(x)
  */
 #define GPIO_BASEADDR_TO_CODE(x)	((x == GPIOA) ? 0:\
-									 (x == GPIOB) ? 1:\
-									 (x == GPIOC) ? 2:\
-									 (x == GPIOD) ? 3:\
-									 (x == GPIOF) ? 4:0 )
+					(x == GPIOB) ? 1:\
+					(x == GPIOC) ? 2:\
+					(x == GPIOD) ? 3:\
+					(x == GPIOF) ? 4:0 )
 
 /******************************************************************************************************************************************/
 
@@ -425,7 +425,7 @@ typedef struct{
 
 #define ENABLE			1
 #define DISABLE			0
-#define SET				ENABLE
+#define SET			ENABLE
 #define RESET			DISABLE
 #define	GPIO_PIN_SET	SET
 #define GPIO_PIN_RESET	RESET
