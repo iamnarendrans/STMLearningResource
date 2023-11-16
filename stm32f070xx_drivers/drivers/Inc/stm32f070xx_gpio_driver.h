@@ -18,7 +18,7 @@ typedef struct{
 	uint8_t	GPIO_PinNumber;				/*! This variable holds the GPIO pin Number @GPIO_PIN_NO */
 	uint8_t	GPIO_PinMode;				/*! This variable holds the GPIO pin Mode @GPIO_PIN_MODES*/
 	uint8_t	GPIO_PinSpeed;				/*! This variable holds the GPIO pin Speed @GPIO_PIN_SPEED*/
-	uint8_t	GPIO_PinPuPdControl;		/*! This variable holds the GPIO pin Push-Pull Control @GPIO_PIN_PUPD*/
+	uint8_t	GPIO_PinPuPdControl;			/*! This variable holds the GPIO pin Push-Pull Control @GPIO_PIN_PUPD*/
 	uint8_t	GPIO_PinOType;				/*! This variable holds the GPIO pin Output Type(OpenDrain/Push-Pull)@GPIO_PIN_OTYPES*/
 	uint8_t	GPIO_PinAltFunMode;			/*! This variable holds the GPIO pin Alternate Function Mode */
 }GPIO_PinConfig_t;
@@ -66,8 +66,8 @@ typedef struct{
  * GPIO Pin pull up pull down configuration macros
  */
 #define GPIO_NO_PUPD			0		/*! GPIO PIN as No Pull-up & No Pull-down mode*/
-#define GPIO_PIN_PU				1		/*! GPIO PIN as Only Pull-up*/
-#define GPIO_PIN_PD				2		/*! GPIO PIN as Only Pull-down mode*/
+#define GPIO_PIN_PU			1		/*! GPIO PIN as Only Pull-up*/
+#define GPIO_PIN_PD			2		/*! GPIO PIN as Only Pull-down mode*/
 
 /*@GPIO_PIN_NO
  * GPIO Pin number macros
@@ -92,8 +92,8 @@ typedef struct{
 
 
 /******************************************************************************************************************
- * 												APIs supported by this driver
- * 						     For more information about the APIs check the function definitions
+ * 						APIs supported by this driver
+ * 			For more information about the APIs check the function definitions
  ******************************************************************************************************************/
 
 
@@ -105,34 +105,34 @@ void GPIO_PeriClockControl(GPIO_RegDef_t *pGPIOx, uint8_t EnorDi);		/*! GPIO Per
 
 /*************************************************Init and DeInit**************************************************/
 
-void GPIO_Init(GPIO_Handle_t *pGPIOHandle);												/*! GPIO initialisation API*/
+void GPIO_Init(GPIO_Handle_t *pGPIOHandle);					/*! GPIO initialisation API*/
 
-void GPIO_DeInit(GPIO_RegDef_t *pGPIOx);												/*! GPIO Deinitialisation API*/
+void GPIO_DeInit(GPIO_RegDef_t *pGPIOx);					/*! GPIO Deinitialisation API*/
 
 /******************************************************************************************************************/
 
 /************************************************Data Read/Write APIs**********************************************/
 
-uint8_t GPIO_ReadFromInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber);				/*! GPIO Read From Input Pin API*/
+uint8_t GPIO_ReadFromInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber);		/*! GPIO Read From Input Pin API*/
 
-uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx);									/*! GPIO Read From Input Port API*/
+uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx);					/*! GPIO Read From Input Port API*/
 
-void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t Value);	/*! GPIO Write To Ouput Pin API*/
+void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t Value);	/*! GPIO Write To Output Pin API*/
 
-void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint16_t Value);						/*! GPIO Write To Output Port API*/
+void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint16_t Value);			/*! GPIO Write To Output Port API*/
 
-void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber);					/*! GPIO Pin Toggling API*/
+void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber);			/*! GPIO Pin Toggling API*/
 
 /******************************************************************************************************************/
 
 
 /********************************************IRQ Configuration and ISR Handler*************************************/
 
-void GPIO_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi);						/*! GPIO IRQ Interrupt Configuration API*/
+void GPIO_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi);			/*! GPIO IRQ Interrupt Configuration API*/
 
-void GPIO_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority);					/*! GPIO IRQ priority number config API*/
+void GPIO_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority);			/*! GPIO IRQ priority number config API*/
 
-void GPIO_IRQHandling(uint8_t PinNumber);												/*! GPIO IRQ/ISR Handler API*/
+void GPIO_IRQHandling(uint8_t PinNumber);						/*! GPIO IRQ/ISR Handler API*/
 
 /******************************************************************************************************************/
 
