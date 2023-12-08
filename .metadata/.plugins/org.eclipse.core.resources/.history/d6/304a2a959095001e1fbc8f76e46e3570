@@ -1,0 +1,19 @@
+/*
+ * PID.c
+ *
+ *  Created on: Dec 8, 2023
+ *      Author: Narendran Srinivasan
+ */
+
+void PIDControllerInit(PIDController *pid)
+{
+
+	pid->differentiator = 0.0f;
+	pid->integrator		= 0.0f;
+
+	pid->prevError 		= 0.0f;
+	pid->prevMeasurement= 0.0f;
+
+	pid->out			= 0.0f;
+
+}
