@@ -45,9 +45,6 @@ void PIDControllerUpdate(PIDController *pid, float setpoint, float measurement)
 		pid->integrator = pid->limMinInt;
 	}
 
-	/* Derivative Gain with (band-limited differentiator) */
-
-
 
 
 }

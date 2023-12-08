@@ -36,18 +36,6 @@ void PIDControllerUpdate(PIDController *pid, float setpoint, float measurement)
 	pid->integrator = pid->integrator + 0.5f * pid->Ki * pid->Ts * (error + pid->prevError);
 
 	/* Anti-windup clamping */
-	if(pid->integrator > pid->limMaxInt)
-	{
-		pid->integrator = pid->limMaxInt;
-	}
-	else if(pid->integrator < pid->limMinInt)
-	{
-		pid->integrator = pid->limMinInt;
-	}
-
-	/* Derivative Gain with (band-limited differentiator) */
-
-
 
 
 }
