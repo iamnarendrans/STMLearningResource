@@ -23,7 +23,7 @@ void PIDControllerInit(PIDController *pid)
 }
 
 
-void PIDControllerUpdate(PIDController *pid, float setpoint, float measurement)
+float PIDControllerUpdate(PIDController *pid, float setpoint, float measurement)
 {
 
 	/* Error Signal */
@@ -47,7 +47,30 @@ void PIDControllerUpdate(PIDController *pid, float setpoint, float measurement)
 
 	/* Derivative Gain with (band-limited differentiator) */
 
+	/* Note: Derivative on measurement, therefore -ve sign in front of the below equation */
+	pid->differentiator = -(2.0f * pid->Kd * (measurement - pid->prevMeasurement)
+						+ (2.0f * pid->tau - pid->Ts) * pid->differentiator)
+						/(2.0f * pid->tau - pid->Ts);
 
+	/* Compute the output and apply limits */
+	pid->out = propotional + pid->integrator + pid->differentiator;
+
+	// Chec the output limits
+	if(pid->out > pid->limMax)
+	{
+		pid->out = pid->limMax;
+	}
+	else if(pid->out < pid->limMin)
+	{
+		pid->out = pid->limMin;
+	}
+
+	/* Store the error and measurement for next update */
+	pid->prevError = error;
+	pid->prevMeasurement = measurement;
+
+	/* Return the controller output */
+	return pid->out;
 
 
 }
