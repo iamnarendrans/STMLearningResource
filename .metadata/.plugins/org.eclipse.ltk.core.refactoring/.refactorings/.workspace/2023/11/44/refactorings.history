@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;001periClockEnable&apos;" deleteContents="true" description="Delete resource &apos;001periClockEnable&apos;" element1="/001periClockEnable" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1698841928785"/>&#x0A;<refactoring comment="Rename resource &apos;debuggingPractice&apos; to &apos;000debuggingPractice&apos;" description="Rename resource &apos;debuggingPractice&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/debuggingPractice" name="000debuggingPractice" stamp="1699105831872" updateReferences="true"/>
-</session>
