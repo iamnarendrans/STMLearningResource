@@ -1,0 +1,17 @@
+/*
+ * FIR.c
+ *
+ *  Created on: Dec 11, 2023
+ *      Author: Narendran Srinivasan
+ */
+
+#include "FIR.h"
+
+void FIRFilter_Init(FIRFilter *filt, float *coeff, float *buf, const uint8_t order)
+{
+	filt->out = 0.0f;
+	filt->coeff = coeff;
+	filt->buf = buf;
+}
+
+void FIRFilter_update(FIRFilter *filt, float In);

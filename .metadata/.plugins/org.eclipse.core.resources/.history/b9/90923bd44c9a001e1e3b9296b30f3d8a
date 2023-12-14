@@ -1,0 +1,27 @@
+/*
+ * FIR.h
+ *
+ *  Created on: Dec 11, 2023
+ *      Author: Narendran Srinivasan
+ */
+
+/*
+ * Finite Impulse Response (FIR) Filter
+ *
+ * Implements a discrete-time FIR filter using a set of coefficients and a circular buffer
+ * Transfer-funtion in z-domain as follows F(z) = C_0 + C_1 * Z^-1 + ........ + C_(N-1)*Z^(N-1)
+ * Where C_n is the n-th coefficients and N is the filter order
+ */
+
+
+#ifndef FIR_H_
+#define FIR_H_
+
+
+typedef struct
+{
+
+}FIRFilter;
+
+
+#endif /* FIR_H_ */

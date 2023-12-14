@@ -1,0 +1,17 @@
+/*
+ * FIR.h
+ *
+ *  Created on: Dec 11, 2023
+ *      Author: Narendran Srinivasan
+ */
+
+#ifndef FIR_H_
+#define FIR_H_
+
+/*
+ * Finite Impulse Response (FIR) Filter
+ *
+ */
+
+
+#endif /* FIR_H_ */
