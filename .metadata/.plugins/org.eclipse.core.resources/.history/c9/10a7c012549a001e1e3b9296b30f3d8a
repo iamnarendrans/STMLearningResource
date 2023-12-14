@@ -21,7 +21,7 @@ void FIRFilter_Init(FIRFilter *filt, float *coeff, float *buf, const uint8_t ord
 	}
 }
 
-float FIRFilter_update(FIRFilter *filt, float In)
+void FIRFilter_update(FIRFilter *filt, float In)
 {
 	/* Store newest input value in circular buffer */
 	filt->buf[filt->putIndex] = In;

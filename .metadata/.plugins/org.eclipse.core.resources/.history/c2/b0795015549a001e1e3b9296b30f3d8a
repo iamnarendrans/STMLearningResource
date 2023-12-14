@@ -31,7 +31,7 @@ typedef struct
 
 void FIRFilter_Init(FIRFilter *filt, float *coeff, float *buf, const uint8_t order);
 
-float FIRFilter_update(FIRFilter *filt, float In);
+void FIRFilter_update(FIRFilter *filt, float In);
 
 
 #endif /* FIR_H_ */
