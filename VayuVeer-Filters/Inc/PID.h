@@ -45,8 +45,37 @@ typedef struct
 }PIDController;
 
 
+typedef struct
+{
+		float Kp;
+		float Ki;
+		float Kff;
+		float limMin;
+		float limMax;
+		float limMinFF;
+		float limMaxFF;
+		float integrator;
+		float prevError;
+		float output;
+}PIController;
+
+// Initialise PID controller with controller gains
 void PIDControllerInit(PIDController *pid);
 
+// Main controller Update using PID
 float PIDControllerUpdate(PIDController *pid, float setpoint, float measurement);
+
+// Initialise PI controller with gains and output limits
+void PI_Init(PIController *ctrl, float Kp, float Ki, float limMin, float limMax);
+
+// Reset presistent variables and set output to zero
+void PI_Reset(PIController *ctrl);
+
+// Enable feedforward control
+void PI_SetFF(PIController *ctrl, float Kff, float limMinFF, float limMaxFF);
+
+// Main controller update routine, requires sample time T (in seconds)
+void PI_Update(PIController *ctrl, float setpoint, float measurement, float T);
+
 
 #endif /* PID_H_ */

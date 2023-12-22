@@ -32,7 +32,7 @@ float FIRFilter_update(FIRFilter *filt, float In)
 	filt->out = 0.0f;
 	for(uint8_t n = 0; n < filt->order; n++)
 	{
-		filt->out = (filt->out + (filt->coeff * filt->buf[getIndex]));
+		filt->out = (filt->out + (*filt->coeff * filt->buf[getIndex]));
 
 		if(getIndex == 0)
 		{

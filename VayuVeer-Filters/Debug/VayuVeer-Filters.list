@@ -29,23 +29,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  12 .comment      00000043  00000000  00000000  000201f8  2**0
                   CONTENTS, READONLY
- 13 .debug_info   00000c21  00000000  00000000  0002023b  2**0
+ 13 .debug_info   00000e15  00000000  00000000  0002023b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_abbrev 00000498  00000000  00000000  00020e5c  2**0
+ 14 .debug_abbrev 000004c7  00000000  00000000  00021050  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_aranges 00000140  00000000  00000000  000212f8  2**3
+ 15 .debug_aranges 00000160  00000000  00000000  00021518  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_rnglists 000000d9  00000000  00000000  00021438  2**0
+ 16 .debug_rnglists 000000f2  00000000  00000000  00021678  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  00002cab  00000000  00000000  00021511  2**0
+ 17 .debug_macro  00001e89  00000000  00000000  0002176a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   00001a9f  00000000  00000000  000241bc  2**0
+ 18 .debug_line   00001bbf  00000000  00000000  000235f3  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000098c3  00000000  00000000  00025c5b  2**0
+ 19 .debug_str    0000990b  00000000  00000000  000251b2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_frame  000014a4  00000000  00000000  0002f520  2**2
+ 20 .debug_frame  00001544  00000000  00000000  0002eac0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000067  00000000  00000000  000309c4  2**0
+ 21 .debug_line_str 00000067  00000000  00000000  00030004  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1306,9 +1306,11 @@ int main()
  8000ed2:	eef4 7ac7 	vcmpe.f32	s15, s14
  8000ed6:	eef1 fa10 	vmrs	APSR_nzcv, fpscr
  8000eda:	d9c3      	bls.n	8000e64 <main+0x54>
- 8000edc:	2300      	movs	r3, #0
 
 	}
+
+	return 0;
+ 8000edc:	2300      	movs	r3, #0
 }
  8000ede:	4618      	mov	r0, r3
  8000ee0:	3748      	adds	r7, #72	; 0x48

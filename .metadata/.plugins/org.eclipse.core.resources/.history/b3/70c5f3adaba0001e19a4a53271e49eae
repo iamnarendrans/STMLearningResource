@@ -1,0 +1,16 @@
+/*
+ * IIRFirstOrder.h
+ *
+ *  Created on: Dec 22, 2023
+ *      Author: Narendran Srinivasan
+ */
+
+#ifndef IIRFIRSTORDER_H_
+#define IIRFIRSTORDER_H_
+
+typedef struct
+{
+
+}IIRFirstOrder;
+
+#endif /* IIRFIRSTORDER_H_ */
