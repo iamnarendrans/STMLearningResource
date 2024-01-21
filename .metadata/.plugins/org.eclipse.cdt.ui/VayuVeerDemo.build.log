@@ -1,0 +1,10 @@
+11:31:43 **** Incremental Build of configuration Debug for project VayuVeerDemo ****
+make -j8 all 
+arm-none-eabi-size  VayuVeerDemo.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7276	     20	   1708	   9004	   232c	VayuVeerDemo.elf
+Finished building: default.size.stdout
+ 
+
+11:31:43 Build Finished. 0 errors, 0 warnings. (took 522ms)
+

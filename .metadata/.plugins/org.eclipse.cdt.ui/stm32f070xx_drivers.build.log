@@ -1,0 +1,22 @@
+15:29:08 **** Incremental Build of configuration Debug for project stm32f070xx_drivers ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f070xx_gpio_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -I"C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f070xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/Src/stm32f070xx_gpio_driver.d" -MT"drivers/Src/stm32f070xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f070xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f070xx_spi_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -I"C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f070xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/Src/stm32f070xx_spi_driver.d" -MT"drivers/Src/stm32f070xx_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f070xx_spi_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f70xx_i2c_driver.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -I"C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f070xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/Src/stm32f70xx_i2c_driver.d" -MT"drivers/Src/stm32f70xx_i2c_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f70xx_i2c_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f070rbtx.d" -MT"Startup/startup_stm32f070rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f070rbtx.o" "../Startup/startup_stm32f070rbtx.s"
+arm-none-eabi-gcc "../Src/003button_interrupt.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -I"C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f070xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/003button_interrupt.d" -MT"Src/003button_interrupt.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/003button_interrupt.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F070RBTx -DSTM32 -DSTM32F0 -DNUCLEO_F070RB -c -I../Inc -I"C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f070xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "stm32f070xx_drivers.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\stm32f070xx_drivers\STM32F070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f070xx_drivers.map" -Wl,--gc-sections -static -specs=rdimon.specs -lc -lrdimon --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f070xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f070xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f070xx_drivers.elf  > "stm32f070xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   2172	      8	   1568	   3748	    ea4	stm32f070xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f070xx_drivers.list
+ 
+
+15:29:10 Build Finished. 0 errors, 0 warnings. (took 1s.961ms)
+

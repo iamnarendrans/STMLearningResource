@@ -1,0 +1,6 @@
+"./Src/003button_interrupt.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f070rbtx.o"
+"./drivers/Src/stm32f070xx_gpio_driver.o"
+"./drivers/Src/stm32f070xx_spi_driver.o"
+"./drivers/Src/stm32f70xx_i2c_driver.o"

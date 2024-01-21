@@ -1,0 +1,12 @@
+content_assist_parameters_background=34,34,34
+content_assist_parameters_foreground=207,191,173
+content_assist_proposals_background=34,34,34
+content_assist_proposals_foreground=207,191,173
+eclipse.preferences.version=1
+org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="org.eclipse.cdt.ui.text.codetemplates.filecomment_context" deleted\="false" description\="Comment for created C/C++ files" enabled\="true" id\="org.eclipse.cdt.ui.text.codetemplates.filecomment" name\="filecomment">/*\r\n * ${file_name}\r\n *\r\n *  Created on\: ${date}\r\n *      Author\: Narendran Srinivasan\r\n *\t\tE-mail\: iamnarendrans@outlook.com\r\n */\r\n</template></templates>
+sourceHoverBackgroundColor=255,255,255
+sourceHoverBackgroundColor.SystemDefault=false
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=Cp1252
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

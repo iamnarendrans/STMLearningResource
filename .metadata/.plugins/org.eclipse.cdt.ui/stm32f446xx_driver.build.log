@@ -1,0 +1,13 @@
+19:54:38 **** Build of configuration Debug for project stm32f446xx_driver ****
+make -j8 all 
+arm-none-eabi-gcc -o "stm32f446xx_driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Administrator\STM32CubeIDE\workspace_1.13.2\stm32f446xx_drivers\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f446xx_driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/001toggle_led.o: in function `main':
+C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f446xx_drivers/Debug/../Src/001toggle_led.c:27: undefined reference to `GPIO_PeriClockControl'
+C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f446xx_drivers/Debug/../Src/001toggle_led.c:29: undefined reference to `GPIO_Init'
+C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/Administrator/STM32CubeIDE/workspace_1.13.2/stm32f446xx_drivers/Debug/../Src/001toggle_led.c:33: undefined reference to `GPIO_ToggleOutputPin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:63: stm32f446xx_driver.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+19:54:38 Build Failed. 4 errors, 0 warnings. (took 258ms)
+

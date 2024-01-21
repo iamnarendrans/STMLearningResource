@@ -1,0 +1,81 @@
+/*
+ * PID.h
+ *
+ *  Created on: Dec 8, 2023
+ *      Author: Narendran Srinivasan
+ */
+
+#ifndef PID_H_
+#define PID_H_
+
+
+typedef struct
+{
+	//Controller gains
+	float Kp;
+	float Ki;
+	float Kd;
+
+
+	// Derivative low-pass filter timer constant
+	float tau;
+
+
+	// Output limits
+	float limMin;
+	float limMax;
+
+	// Integrator limits
+	float limMinInt;
+	float limMaxInt;
+
+	// Sample time in Seconds
+	float Ts;
+
+	// Controller memory
+	float integrator;		/* Required for integrator*/
+	float differentiator;	/* Required for differentiator*/
+	float prevError;
+	float prevMeasurement;
+
+
+	// Controller output
+	float out;
+
+}PIDController;
+
+
+typedef struct
+{
+		float Kp;
+		float Ki;
+		float Kff;
+		float limMin;
+		float limMax;
+		float limMinFF;
+		float limMaxFF;
+		float integrator;
+		float prevError;
+		float output;
+}PIController;
+
+// Initialise PID controller with controller gains
+void PIDControllerInit(PIDController *pid);
+
+// Main controller Update using PID
+float PIDControllerUpdate(PIDController *pid, float setpoint, float measurement);
+
+// Initialise PI controller with gains and output limits
+void PI_Init(PIController *ctrl, float Kp, float Ki, float limMin, float limMax);
+
+// Reset presistent variables and set output to zero
+void PI_Reset(PIController *ctrl);
+
+// Enable feedforward control
+void PI_SetFF(PIController *ctrl, float Kff, float limMinFF, float limMaxFF);
+
+// Main controller update routine, requires sample time T (in seconds)
+void PI_Update(PIController *ctrl, float setpoint, float measurement, float T);
+
+
+#endif /* PID_H_ */

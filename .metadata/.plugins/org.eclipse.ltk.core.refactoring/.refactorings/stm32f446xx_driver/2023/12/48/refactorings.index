@@ -1,0 +1,7 @@
+1701528536630	Rename resource 'stm32f466xx_gpio_driver.h'
+1701528544329	Rename resource 'stm32f466xx_i2c_driver.h'
+1701528552217	Rename resource 'stm32f466xx_spi_driver.h'
+1701528561588	Rename resource 'stm32f466xx.h'
+1701528584985	Rename resource 'stm32f466xx_gpio_driver.c'
+1701528590968	Rename resource 'stm32f466xx_i2c_driver.c'
+1701528597705	Rename resource 'stm32f466xx_spi_driver.c'
