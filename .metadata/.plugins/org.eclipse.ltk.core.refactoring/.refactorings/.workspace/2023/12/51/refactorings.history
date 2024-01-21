@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;VayuVeer-Filters/Inc/IIRFirstOrder.h&apos;" deleteContents="false" description="Delete resource &apos;VayuVeer-Filters/Inc/IIRFirstOrder.h&apos;" element1="/VayuVeer-Filters/Inc/IIRFirstOrder.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1703236971408"/>&#x0A;<refactoring comment="Delete resource &apos;VayuVeer-Filters/Src/IIRFirstOrder.c&apos;" deleteContents="false" description="Delete resource &apos;VayuVeer-Filters/Src/IIRFirstOrder.c&apos;" element1="/VayuVeer-Filters/Src/IIRFirstOrder.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1703236975278"/>
-</session>
